@@ -11,15 +11,15 @@ export default function App() {
 
 
     function tong() {
-        let a = parseInt(num1) + parseInt(num2);
+        let a = parseFloat(num1) + parseFloat(num2);
         setResult('Kết quả: ' + a + ' ( Tổng ) ');
     }
     function hieu() {
-        let a = parseInt(num1) - parseInt(num2);
+        let a = parseFloat(num1) - parseFloat(num2);
         setResult('Kết quả: ' + a + ' ( Hiệu ) ');
     }
     function tich() {
-        let a = parseInt(num1) * parseInt(num2);
+        let a = parseFloat(num1) * parseFloat(num2);
         setResult('Kết quả: ' + a + ' ( Tích ) ');
     }
     function thuong() {
