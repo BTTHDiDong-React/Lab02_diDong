@@ -6,27 +6,22 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import RootComponent from './src/views/index';
 import Layout1b from './src/views/layout_1b';
 
+const Stack = createNativeStackNavigator();
 
 export default function App() {
 
-    const Stack = createNativeStackNavigator();
 
     return (
     <View style={styles.container}>
-        <RootComponent />
+        <Layout1b />
         {/* <NavigationContainer>
-            <Stack.Navigator initialRouteName="Layout1b">
-                <Stack.Screen
-                    name="RootComponent"
-                    component={RootComponent}
-                    options={{ title: 'Welcome' }}
-                />
+            <Stack.Navigator initialRouteName="RootComponent">
+                <Stack.Screen name="RootComponent" component={RootComponent} />
                 <Stack.Screen name="Layout1b" component={Layout1b} />
             </Stack.Navigator>
         </NavigationContainer> */}
 
-
-    </View>
+        </View>
   );
 }
 const styles =  StyleSheet.create({

@@ -1,7 +1,7 @@
 import { ImageBackground, StyleSheet, StatusBar, Text, View, Image, Button } from 'react-native';
 import React from 'react';
 
-import styles from './style';
+import styles from './../styles/style';
 
 const RootComponent = () => {
   return (
